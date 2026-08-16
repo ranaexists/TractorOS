@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+  
+  .glow-orange {
+    box-shadow: 0 0 20px rgba(242, 125, 38, 0.25);
+  }
+  
+  .glow-orange-lg {
+    box-shadow: 0 0 35px rgba(242, 125, 38, 0.35);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.25);
+  }
+
+  .glow-green-lg {
+    box-shadow: 0 0 35px rgba(74, 222, 128, 0.35);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+body {
+  background-color: #050505;
+  color: #E0E0E0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom scrollbars for dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+

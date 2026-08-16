@@ -1,0 +1,6 @@
+{
+  "name": "Smart Tractor Keyless Control",
+  "description": "Automotive-grade mobile interface and digital key system for ESP32 Bluetooth Low Energy tractor access, push-start ignition, proximity tracking, and safety interlocks.",
+  "requestFramePermissions": ["bluetooth"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
